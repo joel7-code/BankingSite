@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+    <title>Title</title>
+</head>
+
+<body style="background-image:url('http://gpshortcuts.co.uk/images/reghere.jpg')">
+<h2 style="background-color:white;">Application Form</h2>
+<form action="message" method="post">
+ {% csrf_token %}
+<div class="content">
+    <input type="text" name="name" placeholder="Enter your FullName"><br><br>
+     <label for="bdaymonth">DOB:</label>
+  <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+    <input type="number" name="age" placeholder="Enter your Age"><br>
+    <p>Gender:</p>
+    <input type="radio" id="Male" name="gender" value="Male">
+    <label for="male">Male</label><br><br>
+     <input type="radio" id="female" name="gender" value="Female">
+     <label for="female">Female</label><br><br>
+    <input type="number" name="phone" placeholder="Enter your Phone Number"><br><br>
+    <input type="email" name="email" placeholder="Enter your Mail Id"><br><br>
+    <input type="text" name="address" placeholder="Enter your Address"><br>
+    <br>
+<form name="form1" id="form1" action="/action_page.php">
+  District: <select name="subject" id="subject">
+    <option value="" selected="selected">Select District</option>
+    <option value="free">Thiruvanathapuram</option>
+     <option value="free">Kochi</option>
+     <option value="free">pathanamthitta</option>
+    <option value="free">Palakkad</option>
+     <option value="free">Idukki</option>
+     <option value="free">Kottayam</option>
+  </select>
+  <br><br>
+  Branch: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select district first</option>
+    <option value="free">Edappally</option>
+     <option value="free">Kakkanad</option>
+     <option value="free">Nilambur</option>
+     <option value="free">varkkala</option>
+     <option value="free">Thiruvalla</option>
+     <option value="free">Adoor</option>
+     <option value="free">Vaikom</option>
+    <option value="free">Kochi</option>
+  </select>
+<br><br>
+    <label for="cars">Choose Account Type:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">Choose account</option>
+    <option value="volvo">Savings account</option>
+  <option value="saab">Salary account</option>
+  <option value="mercedes">Fixed deposit account</option>
+  <option value="audi">NRI account</option>
+</select>
+<br>
+
+    <p>Materials Provided:</p>
+     <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Credit card</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Debit card</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Cheque book</label>
+    <br><br>
+    <input type="submit"><br>
+</div>
+</form>
+</body>
+</html>
